@@ -1,0 +1,2 @@
+image_name    = "Ubuntu 22.04"
+key_pair_name = "training-key"

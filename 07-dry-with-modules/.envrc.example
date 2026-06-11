@@ -1,0 +1,10 @@
+export OS_USERNAME="your-username"
+export OS_PASSWORD="your-password"
+export OS_AUTH_URL="https://your-openstack-auth-url:5000"
+export OS_USER_DOMAIN_NAME="your-domain"
+export OS_PROJECT_DOMAIN_NAME="your-domain"
+export OS_REGION_NAME="your-region"
+export OS_PROJECT_NAME="your-project"
+export OS_TENANT_NAME="your-project"
+export OS_AUTH_VERSION=3
+export OS_IDENTITY_API_VERSION=3

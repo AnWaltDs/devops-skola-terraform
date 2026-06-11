@@ -1,0 +1,9 @@
+.envrc
+*/.envrc
+.terraform/
+.terragrunt-cache/
+*.tfstate
+*.tfstate.backup
+.DS_Store
+*.pptx
+.idea/

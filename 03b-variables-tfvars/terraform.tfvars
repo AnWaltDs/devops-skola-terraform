@@ -1,0 +1,6 @@
+auth_url         = "https://kna1.citycloud.com:5000"
+tenant_name      = "iac-openshift-project-test"
+user_name        = "iac-user"
+password         = "nPBrZxNc5CC76lMdsa"
+region           = "Kna1"
+user_domain_name = "CCP_Domain_50692"
