@@ -51,7 +51,7 @@ modules/
 ├─────────────────────────────────────────────────────────┤
 │  openstack.hcl                                          │
 │  - generate "provider" block                            │
-│  - shared inputs (image_name, key_pair_name)            │
+│  - shared inputs (image_name)                           │
 ├─────────────────────────────────────────────────────────┤
 │  terragrunt.hcl (leaf)                                  │
 │  - includes all three parents                           │
@@ -83,7 +83,7 @@ The state path is `state/customers/acme/openstack/dev/webstack/terraform.tfstate
 No hardcoded backend keys. No risk of state collision.
 
 ### 5. `inputs` merge across includes
-`openstack.hcl` sets `image_name` and `key_pair_name`.
+`openstack.hcl` sets `image_name`.
 The leaf adds `subnet_cidr`, `flavor_name`, etc.
 Terragrunt merges them before passing to the module.
 

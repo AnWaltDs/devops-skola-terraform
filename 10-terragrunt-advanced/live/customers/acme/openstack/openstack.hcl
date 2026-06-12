@@ -29,6 +29,5 @@ generate "provider" {
 
 # Inputs shared across all environments for this customer + platform.
 inputs = {
-  image_name    = "Ubuntu 22.04"
-  key_pair_name = "training-key"
+  image_name    = "Ubuntu 22.04 Jammy Jellyfish x86_64"
 }

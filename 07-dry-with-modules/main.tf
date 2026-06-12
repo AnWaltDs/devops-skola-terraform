@@ -8,8 +8,7 @@ module "dev" {
   http_cidr           = "0.0.0.0/0"
   instance_private_ip = "10.20.10.10"
   image_name          = var.image_name
-  flavor_name         = "m1.small"
-  key_pair_name       = var.key_pair_name
+  flavor_name         = "1C-1GB"
 }
 
 # Deploy the test web stack using the shared module.
@@ -22,8 +21,7 @@ module "test" {
   http_cidr           = "0.0.0.0/0"
   instance_private_ip = "10.20.20.10"
   image_name          = var.image_name
-  flavor_name         = "m1.small"
-  key_pair_name       = var.key_pair_name
+  flavor_name         = "1C-1GB"
 }
 
 # Deploy the prod web stack using the shared module.
@@ -36,6 +34,5 @@ module "prod" {
   http_cidr           = "0.0.0.0/0"
   instance_private_ip = "10.20.30.10"
   image_name          = var.image_name
-  flavor_name         = "m1.medium"
-  key_pair_name       = var.key_pair_name
+  flavor_name         = "1C-1GB"
 }

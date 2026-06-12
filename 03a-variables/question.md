@@ -10,7 +10,7 @@ provider "openstack" {
 
 resource "openstack_compute_instance_v2" "demo" {
   name       = var.vm_name
-  flavor_id  = var.flavor_id
+  flavor_name = var.flavor_name
   image_name = var.image_name
 }
 ```

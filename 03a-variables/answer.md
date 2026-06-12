@@ -14,7 +14,7 @@ provider "openstack" {
 
 resource "openstack_compute_instance_v2" "demo" {
   name       = var.vm_name     # <- variable now
-  flavor_id  = var.flavor_id   # <- variable now
+  flavor_name = var.flavor_name  # <- variable now
   image_name = var.image_name  # <- variable now
 }
 ```

@@ -20,7 +20,7 @@ locals {
 }
 
 terraform {
-  source = "${get_repo_root()}/modules/webstack"
+  source = "${get_terragrunt_dir()}/../../../../../../modules/webstack"
 }
 
 inputs = {
@@ -29,5 +29,5 @@ inputs = {
   ssh_cidr            = "10.0.0.0/8"
   http_cidr           = "0.0.0.0/0"
   instance_private_ip = "10.20.30.10"
-  flavor_name         = "m1.medium"
+  flavor_name         = "1C-1GB"
 }

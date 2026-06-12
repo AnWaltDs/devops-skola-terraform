@@ -21,7 +21,7 @@ remote_state {
   }
 
   config = {
-    path = "${get_repo_root()}/state/${path_relative_to_include()}/terraform.tfstate"
+    path = "${get_parent_terragrunt_dir()}/state/${path_relative_to_include()}/terraform.tfstate"
     # Example result:
     #   state/customers/acme/openstack/dev/webstack/terraform.tfstate
   }

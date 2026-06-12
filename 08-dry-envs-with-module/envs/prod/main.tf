@@ -9,5 +9,4 @@ module "webstack" {
   instance_private_ip = var.instance_private_ip
   image_name          = var.image_name
   flavor_name         = var.flavor_name
-  key_pair_name       = var.key_pair_name
 }

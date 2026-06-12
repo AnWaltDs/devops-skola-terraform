@@ -3,14 +3,14 @@ variable "vm_name" {
   default = "demo-vm"
 }
 
-variable "flavor_id" {
+variable "flavor_name" {
   type    = string
-  default = "tiny"
+  default = "1C-1GB"
 }
 
 variable "image_name" {
   type    = string
-  default = "ubuntu-22.04"
+  default = "Ubuntu 22.04 Jammy Jellyfish x86_64"
 }
 
 variable "network_name" {

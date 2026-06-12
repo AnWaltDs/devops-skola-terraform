@@ -12,7 +12,6 @@ inputs = {
   ssh_cidr            = "0.0.0.0/0"
   http_cidr           = "0.0.0.0/0"
   instance_private_ip = "10.20.30.10"
-  image_name = "Ubuntu 22.04"
-  flavor_name = "m1.medium"
-  key_pair_name = "training-key"
+  image_name = "Ubuntu 22.04 Jammy Jellyfish x86_64"
+  flavor_name = "1C-1GB"
 }

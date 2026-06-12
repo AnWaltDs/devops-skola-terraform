@@ -23,6 +23,6 @@ provider "openstack" {
 # Deploy an instance on OpenStack.
 resource "openstack_compute_instance_v2" "demo" {
   name      = "demo-vm"
-  flavor_id  = "tiny"
-  image_name = "ubuntu-22.04"
+  flavor_name = "1C-1GB"
+  image_name  = "Ubuntu 22.04 Jammy Jellyfish x86_64"
 }
