@@ -2,6 +2,46 @@
 
 This repository is designed for a beginner-friendly Terraform workshop.
 
+## Prerequisites
+
+- **Git**
+- **OpenTofu (`tofu`)**
+- **Terragrunt** — only needed for `09-with-terragrunt` and `10-terragrunt-advanced`
+
+### Install guide
+
+**Windows**
+
+The `.envrc` files use Bash syntax (`export VAR=...`) and the exercise READMEs tell you to run `source ../.envrc`. This does **not** work in PowerShell or cmd.exe — do the whole workshop in **Git Bash**, which you get from the Git for Windows installer below.
+
+```
+winget install Git.Git
+winget install OpenTofu.Tofu
+winget install Gruntwork.Terragrunt
+```
+
+Skip `direnv` — it's built for Unix shells and adds setup overhead for little benefit here. Just run `source ../.envrc` manually in Git Bash, as the exercise READMEs suggest.
+
+**macOS**
+
+```
+brew install git opentofu terragrunt
+```
+
+**Linux**
+
+Use your distro's package manager for `git`. For OpenTofu and Terragrunt, follow the official install scripts:
+- OpenTofu: https://opentofu.org/docs/intro/install/
+- Terragrunt: https://docs.terragrunt.com/getting-started/install/
+
+### Verify
+
+```
+git --version
+tofu --version
+terragrunt --version
+```
+
 ## Goal
 
 Participants move from a broken example to a clean, reusable Terraform setup in small steps:
